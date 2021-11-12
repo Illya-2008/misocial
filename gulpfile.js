@@ -100,7 +100,7 @@ gulp.task("fonts", function () {
 gulp.task("images", function () {
     return gulp
         .src([
-            "src/img/**/*"
+            "src/img/**/*.*"
         ])
         .pipe(gulp.dest("docs/img"))
         .pipe(browserSync.reload({

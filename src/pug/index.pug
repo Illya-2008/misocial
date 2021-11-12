@@ -1,9 +1,81 @@
+include components/mixins
+
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Hello
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.css")
+        title Misocial
     body 
-        p Hello
+        header 
+            .wrapper
+                img(src="img/light-logo.png", alt="logo").logo
+                .burger
+                    .stick
+                .links
+                    a(href="#").link Home
+                    a(href="#").link Why MISOCIAL
+                    a(href="#").link Features
+                    a(href="#").link Articles
+                    a(href="#").link Pricing
+                    a(href="#").btn2 GET STARTED
+                .info
+                    .text-stiks 
+                        p.text-stiks-insade SOCIAL MARKETING & ANALYTICS
+                    h1.big-h1 Pricing Table
+                    p.text Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    p.text elit, sed do eiusmod tempor incididunt ut.
+                .arrow-block
+                    a(href="#cards").arrow
+                        img(src="img/arrow.png", alt="arrow").arrow-insade
+        main
+            .wrapper#cards
+                .info2
+                    .text-stiks2 
+                        p.text-stiks-insade2 misocial 
+                    h1.h1 Select a Plan 
+                    p.text2 Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    p.text2 elit, sed do eiusmod tempor incididunt ut.
+                .cardwrap
+                    +oneCard(cards.card1)
+                    +oneCard(cards.card2)
+                    +oneCard(cards.card3)
+        footer
+            .upper-footer
+                .wrapper
+                    .info3
+                        .text-stiks 
+                            p.text-stiks-insade SOCAL MARKETING & ANALYTICS
+                        h1.big-h1 Take control of your data
+                        .buttons
+                            a(href="#").btn4 GET STARTED
+                            a(href="#").btn5 EXPLORE FEATURES
+            .middle-footer
+                .wrapper
+                    img(src="img/dark-logo.png", alt="logo").logo
+                    .burger2
+                        .stick2
+                    .links
+                        a(href="#").link2 Home
+                        a(href="#").link2 Why MISOCIAL
+                        a(href="#").link2 Features
+                        a(href="#").link2 Articles
+                        a(href="#").link2 Pricing
+                        a(href="#").btn3 GET STARTED
+            .wrapper
+                .under-footer 
+                    p.text3 © 2017 Mass Impressions & Tranmautritam. Make the right impression.
+                    .icons
+                        a(href="#")
+                            img(src="img/ico-facebook.svg", alt="ico").ico
+                        a(href="#")
+                            img(src="img/ico-twitter.svg", alt="ico").ico
+                        a(href="#")
+                            img(src="img/ico-google.svg", alt="ico").ico
+                        a(href="#")
+                            img(src="img/ico-instagram.svg", alt="ico").ico
