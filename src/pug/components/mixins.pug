@@ -1,4 +1,28 @@
 -
+    let menu = [
+        {
+            href: "#",
+            name: "Home"
+        },
+        {
+            href: "#",
+            name: "Why MISOCIAL"
+        },
+        {
+            href: "#",
+            name: "Features"
+        },
+        {
+            href: "#",
+            name: "Articles"
+        },
+        {
+            href: "#",
+            name: "Pircing"
+        },
+    ]
+
+-
     let cards = {
         card1: {
             src: "img/ic-satellite.png",
@@ -40,6 +64,12 @@
             href: "#",
         }
     }
+
+mixin menu (item)
+    ul.links
+        each element in item 
+            li.li
+                a(href=element.href)= element.name 
 
 mixin oneCard (item)
     figure.card
