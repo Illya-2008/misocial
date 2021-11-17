@@ -259,7 +259,7 @@ header
 .card
     text-align: center
     margin: 30px 20px
-    padding: 60px 45px
+    padding: 50px 15px
     border-radius: 30px
     background-color: #ffffff
     border: 1px solid #d7dbe8
@@ -268,6 +268,8 @@ header
         padding: 60px 40px
     +media(1100)
         padding: 60px 90px
+    +media(400)
+        padding: 60px 45px
     &:hover
         border-color: transparent
         filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
@@ -387,7 +389,6 @@ h1
         line-height: 2.8em
 
 .icons
-    margin-top: 30px
     display: inline-block
 
 .burger2
@@ -435,10 +436,12 @@ h1
     width: 100%
     display: flex
     margin: 0 auto
+    padding-top: 20px
     flex-direction: column-reverse
     align-items: center
     border-top: 1px solid #bdbdc2
     +media(700)
+        padding-top: 0
         justify-content: space-between
         flex-direction: row
 .svg
