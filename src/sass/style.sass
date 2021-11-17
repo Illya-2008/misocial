@@ -21,19 +21,21 @@ header
 .btn
     +btn ("dark")
     width: 100px
-    margin-top: 60px
+    margin-top: 40px
     +media(440)
         width: 150px
         text-align: center
+    +media(400)
+        margin-top: 60px
 
 .white a
-    padding: 10px
+    padding: 7px
     margin-top: 10px
     position: relative
     +link
-    +media(555)
-        padding: 20px
-        margin: 0
+    +media(1020)
+        padding: 13px
+        
     &:hover:before
         content: ""
         position: absolute
@@ -54,7 +56,7 @@ header
     display: block
     background-color: transparent
     transition: all .25s ease
-    +media(650)
+    +media(850)
         display: none
     &:hover
         +bigshadow
@@ -110,12 +112,11 @@ header
         +bigshadow
 
 .dark a
-    padding: 10px
+    padding: 7px
     position: relative
     +link2
-    +media(555)
-        padding: 20px
-        margin: 0
+    +media(1020)
+        padding: 10px
 
 .btn2
     +btn ("light")
@@ -127,7 +128,7 @@ header
     width: 80px
     +media(1050)
         display: inline-block
-    +media(650)
+    +media(850)
         display: block
 
 .btn3
@@ -135,10 +136,13 @@ header
     margin-top: 20px
     float: right
     margin-bottom: 20px
+    margin-left: 20px
     width: 80px
     display: none
-    +media(650)
+    +media(850)
         display: block
+    +media(1050)
+        margin-left: 0
         
 
 .info
@@ -147,7 +151,10 @@ header
 
 .info2
     margin-top: 100px
-    margin-bottom: 70px
+    margin-bottom: 0
+    +media(1300)
+        margin-bottom: 70px
+        
 
 .info3
     padding-top: 100px
@@ -164,15 +171,13 @@ header
         width: 200px
 
 .menu
-    float: none
     padding-top: 20px
-    margin-right: 30px
     text-align: center
-    display: block
+    margin-right: 0
+    float: right
+    display: inline-block
     +media(1020)
-        float: right
-        display: inline-block
-
+        margin-right: 30px
 
 .links
     text-align: center
@@ -182,7 +187,7 @@ header
     +media(1050)
         float: right
         display: inline-block
-    +media(650)
+    +media(850)
         display: inline-block
 
 .li
@@ -204,7 +209,6 @@ header
     background-color: $white
     border-radius: 30px
     flex-wrap: wrap
-    padding: 60px 70px 65px
     margin-bottom: 40px
     +media(1300)
         flex-direction: row
@@ -223,12 +227,16 @@ header
     font-weight: bold
 
 .description
-    font-size: 16px
+    font-size: 12px
     line-height: 1.75em
     color: #9fa4af
     margin: 7px 0
     font-weight: 400
     text-align: center
+    +media(460)
+        font-size: 16px
+    +media(410)
+        font-size: 13px   
 
 .price
     font-size: 60px
@@ -369,17 +377,16 @@ h1
     font-family: "Maven Pro"
 
 .text3
-    font-size: 10px
+    font-size: 16px
     line-height: 2.8em
     color: #9fa4af
     font-weight: 400
     display: inline-block
     font-family: "Maven Pro"
-    +media(700)
-        font-size: 16px
 
 .icons
     margin-top: 30px
+    display: inline-block
 
 .burger2
     width: 50px
@@ -391,7 +398,7 @@ h1
     border-radius: 10px
     display: block
     background-color: transparent
-    +media(650)
+    +media(850)
         display: none
     &:hover
         +bigshadow
@@ -425,9 +432,11 @@ h1
 .under-footer
     width: 100%
     display: flex
-    justify-content: space-between
+    flex-direction: column-reverse
     border-top: 1px solid #bdbdc2
-
+    +media(700)
+        justify-content: space-between
+        flex-direction: row
 .svg
     display: none
 
