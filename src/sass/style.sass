@@ -151,9 +151,9 @@ header
 
 .info2
     margin-top: 100px
-    margin-bottom: 0
+    margin-bottom: 70px
     +media(1300)
-        margin-bottom: 70px
+        margin-bottom: 100px
         
 
 .info3
@@ -166,9 +166,7 @@ header
 .logo
     margin-top: 20px
     margin-bottom: 10px
-    width: 170px
-    +media(350)
-        width: 200px
+    width: 200px
 
 .menu
     padding-top: 20px
@@ -378,11 +376,15 @@ h1
 
 .text3
     font-size: 16px
-    line-height: 2.8em
     color: #9fa4af
     font-weight: 400
+    text-align: center
+    line-height: 2em
     display: inline-block
     font-family: "Maven Pro"
+    +media(700)
+        text-align: left
+        line-height: 2.8em
 
 .icons
     margin-top: 30px
@@ -432,7 +434,9 @@ h1
 .under-footer
     width: 100%
     display: flex
+    margin: 0 auto
     flex-direction: column-reverse
+    align-items: center
     border-top: 1px solid #bdbdc2
     +media(700)
         justify-content: space-between
