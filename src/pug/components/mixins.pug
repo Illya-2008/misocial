@@ -75,9 +75,11 @@ mixin oneCard (item)
     figure.card
         figcaption 
             .cardimg
-                img(src=item.src, alt=item.alt)
+                .images
+                    img(src=item.src, alt=item.alt)
                 p.personal PERSONAL
-                p.price= item.price
+                span.price= item.price 
+                    span.span2 $
                     span /month
                 .description
                     each desc in item.description 
