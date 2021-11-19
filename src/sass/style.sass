@@ -35,8 +35,7 @@ header
     +link
     +media(1020)
         padding: 13px
-        
-    &:hover:before
+    &:before
         content: ""
         position: absolute
         top: 60px
@@ -44,6 +43,10 @@ header
         width: 100%
         height: 2px
         background-color: #fff
+        transform: scale(0)
+        transition: all .5s ease
+    &:hover:before
+        transform: scale(1) 
 
 .burger
     width: 50px
@@ -92,9 +95,13 @@ header
     height: 110px
 
 .ico
-    +ico
+    +big-ico
+    margin: 0 20px
     fill: $lightgrey
     transition: all .25s ease
+    +media(700)
+        +ico
+        margin: 0
     &:hover
         fill: #6e45e2
 
@@ -189,6 +196,9 @@ header
         display: inline-block
 
 .li
+    display: inline-block
+
+.li2
     display: inline-block
 
 .btn4
@@ -377,7 +387,7 @@ h1
     font-family: "Maven Pro"
 
 .text3
-    font-size: 16px
+    font-size: 12px
     color: #9fa4af
     font-weight: 400
     text-align: center
@@ -387,8 +397,13 @@ h1
     +media(700)
         text-align: left
         line-height: 2.8em
+    +media(560)
+        font-size: 16px
+
 
 .icons
+    padding: 0
+    list-style: none
     display: inline-block
 
 .burger2
